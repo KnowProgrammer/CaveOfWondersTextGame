@@ -212,7 +212,7 @@ class LongTallGrass(Scene):
             return 'long_tall_grass'
 
 
-class Beach():
+class Beach(Scene):
     items = ['boat']
     exits = ['north']
 
@@ -269,7 +269,7 @@ class Beach():
 
 
 
-class Forest():
+class Forest(Scene):
     items = []
     exits = ['south']
     forest_animals = 'alive'
@@ -318,7 +318,7 @@ class Forest():
 
 
 
-class Space():
+class Space(Scene):
     items = []
     exits = ['north', 'east']
 
@@ -348,7 +348,7 @@ class Space():
             return 'space'
 
 
-class WesternTown():
+class WesternTown(Scene):
     items = []
     exits = ['north west', 'north east', 'south west', 'south east', 'west']
 
@@ -384,7 +384,7 @@ class WesternTown():
             return 'western_town'
 
 
-class Bar():
+class Bar(Scene):
     items = ['beer', 'wine', 'coke', 'water']
     exits = ['south']
 
@@ -417,7 +417,7 @@ class Bar():
             return 'bar'
 
 
-class PurpleHouse():
+class PurpleHouse(Scene):
     items = ['boat key', 'envelope', 'weird wooden figure']
     exits = ['north', 'south']
 
@@ -469,7 +469,7 @@ class PurpleHouse():
             return 'purple_house'
 
 
-class BuddistTemple():
+class BuddistTemple(Scene):
     items = []
     exits = ['north', 'south', 'west', 'east']
 
@@ -507,7 +507,7 @@ class BuddistTemple():
             return 'buddist_temple'
 
 
-class WeaponsShop():
+class WeaponsShop(Scene):
     items = ['rocket launcher']
     exits = ['south']
 
@@ -538,7 +538,7 @@ class WeaponsShop():
             return 'weapons_shop'
 
 
-class ToyShop():
+class ToyShop(Scene):
     items = ['toy car', 'toy bear', 'toy sword']
     exits = ['north']
 
@@ -563,7 +563,7 @@ class ToyShop():
             return 'toy_shop'
 
 
-class SmallIsland():
+class SmallIsland(Scene):
 
 
     def enter(self):
@@ -619,43 +619,4 @@ a_game = Engine(a_map)
 a_player = Player()
 a_game.play()
 
-#Inventory
-# Combat
 
-
-
-
-
-# Player Health
-# Player Damage
-# Player Weapon
-
-#   Enemies
-# Enemy Health
-# Enemy Weapon
-# Enemy Damage
-
-
-
-
-
-
-
-
-# Death
-# Cave Opening
-
-# Damp Wet Area
-# Tall Grass Field
-# Towering Forest
-# Space
-# Western Town
-# The Bar
-# Weapons Shop
-# Toy Shop
-# Purple House
-# Buddist Temple
-#
-# Beach
-# Island
-# Portal
